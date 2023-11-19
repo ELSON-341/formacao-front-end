@@ -4,3 +4,20 @@
 h3 {
     color: green;
 }
+
+h2 {
+    border-bottom: 2px solid red;
+}
+
+/* Ordem do CSS */
+h2#some-title {
+    border-color: green;
+} 
+h2.title{
+    border-color: blue;
+}
+
+/* nome de cores */
+.clor-name {
+    color: #dc143c6b
+}

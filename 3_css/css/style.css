@@ -21,3 +21,17 @@ h2.title{
 .clor-name {
     color: #dc143c6b
 }
+
+/* bg opacity */
+section.bg-opacity {
+    background-color: green;
+    font-size: 2em;
+    color: blue;
+    opacity: 0.1;
+}
+section.bg-opacity-2 {
+    background-color: #999;
+    font-size: 2em;
+    color: black;
+    opacity: 0.6;
+}

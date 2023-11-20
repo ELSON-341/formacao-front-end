@@ -35,3 +35,9 @@ section.bg-opacity-2 {
     color: black;
     opacity: 0.6;
 }
+ /* bg image */
+ section.bg-image {
+    background-image: url(../img/img05.jpg);
+    color: white;
+    padding: 5px;
+ }

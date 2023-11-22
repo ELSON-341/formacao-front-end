@@ -48,4 +48,37 @@ section.bg-opacity-2 {
     height: 50px;
     width: 50px;
     background-color: purple;
+    box-sizing: border-box;
  }
+
+ /* padding with width */
+ div.without-border-box {
+    width: 400px;
+    margin: 25px;
+    padding: 25px;
+    background-color: #444;
+    color: white;
+ }
+ div.border-box {
+    width: 400px;
+    margin: 25px;
+    padding: 25px;
+    background-color: #444;
+    color: white;
+    box-sizing: border-box;
+ }
+
+ /* border individual */
+ div.border-test-01 {
+    border-left: 3px solid red;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+ }
+ div.border-test-02 {
+    border-bottom: 5px double red;
+    padding: 10px;
+    background-color: black;
+    color: white;
+ }
+

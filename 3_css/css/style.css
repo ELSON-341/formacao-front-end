@@ -82,3 +82,8 @@ section.bg-opacity-2 {
     color: white;
  }
 
+ /* text decoration */
+div.text-through {
+    font-size: 2em;
+    text-decoration: line-through;
+}

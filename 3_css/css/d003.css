@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+aside#box-model {
+    background-color: darkblue;
+    height: 100px;
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid red;
+    outline: 3px solid green;
+    box-sizing: border-box;
+    text-align: center;
+}
+h2.txt {
+    color: rgb(209, 20, 20);
+}

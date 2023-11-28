@@ -11,10 +11,13 @@ html, body {
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
 }
-main.container{
-    width: 900px;
+main.container {
+    width: 1000px;
+    padding: 40px;
     margin: auto;
+    background-color: white;
 }
 header > h1 {
     text-align: center;
@@ -41,8 +44,14 @@ figure > figcaption {
     font-size: 15px;
     margin: 5px 0px 30px 0px;
 }
-article.biografia-container > h2{
+h2{
     margin: 30px 0px;
+    font-size: 1.5em;
+}
+article.biografia-container {
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+    padding: 30px 0px;
 }
 article.biografia-container > p {
     margin: 16px 0px; 
@@ -55,6 +64,19 @@ strong {
 aside.quotes-container {
     background-color: lightgray;
     padding: 50px;
+    margin-bottom: 50px;
+}
+aside.quotes-container > blockquote {
     font-size: 1.5em;
     font-weight: bolder;
+}
+aside.quotes-container > em > small {
+    font-style: italic;
+}
+section.curiosities-container > ul {
+    margin: 40px;
+    line-height: 1.7em;
+}
+li {
+    list-style-type: '\2714\00A0\00A0';
 }

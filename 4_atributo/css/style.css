@@ -73,6 +73,9 @@ aside.quotes-container > blockquote {
 aside.quotes-container > em > small {
     font-style: italic;
 }
+section.curiosities-container {
+    border-top: 1px solid rgba(0, 0, 0, 0.384);
+}
 section.curiosities-container > ul {
     margin: 40px;
     line-height: 1.7em;

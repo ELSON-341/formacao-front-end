@@ -14,10 +14,11 @@ body {
     background-color: lightgray;
 }
 main.container {
-    width: 1000px;
+    width: 80vw;
     padding: 40px;
     margin: auto;
     background-color: white;
+    box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.274);
 }
 header > h1 {
     text-align: center;
@@ -79,7 +80,15 @@ section.curiosities-container {
 section.curiosities-container > ul {
     margin: 40px;
     line-height: 1.7em;
-}
-li {
     list-style-type: '\2714\00A0\00A0';
+}
+footer > p > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+footer > p > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
 }

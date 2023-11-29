@@ -1,0 +1,12 @@
+@charset "UTF-8";
+body {
+    padding-bottom: 500px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+div input[type="txet"], div label {
+    display: block;
+}

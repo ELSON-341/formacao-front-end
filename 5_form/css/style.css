@@ -7,6 +7,6 @@ div {
     margin-bottom: 10px;
 }
 
-div input[type="txet"], div label {
+div input, div label {
     display: block;
 }

@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <h2>Formalário HTML</h2>
-    <form>
+    <h2>Form HTML</h2>
+    <form action="resgiter.php" method="get" autocomplete="on">
         <div>
-            <label for="text">Texto</label>
+            <!-- 1 - Primeiro formulário -->
+            <!-- 2 -Atributos do formulário -->
+            <label for="text">Text</label>
             <input type="text" id="text"/>
+        </div>
+        <div>
+            <!-- 3 - attribute name -->
+            <label for="age">Ege:</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <!-- 4 - attribute label -->
+            <label for="nome">name:</label>
+            <input type="text" name="nome" id="name" autocomplete="name">
         </div>
     </form>
 </body>

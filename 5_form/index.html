@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Form HTML</h2>
-    <form action="resgiter.php" method="get" autocomplete="on">
+    <form action="resgiter.php" method="get" autocomplete="off">
         <div>
             <!-- 1 - Primeiro formulário -->
             <!-- 2 -Atributos do formulário -->
@@ -23,8 +23,43 @@
         <div>
             <!-- 4 - attribute label -->
             <label for="nome">name:</label>
-            <input type="text" name="nome" id="name" autocomplete="name">
+            <input type="text" name="nome" id="name">
         </div>
+        <div>
+            <!-- 6 - select -->
+            <label for="job">Select your profession:</label>
+            <select name="job" id="job">
+                <option disabled selected>choise</option>
+                <option value="prgramador">Programador</option>
+                <option value="teste">teste</option>
+                <option value="OdevOps">OdevOps</option>
+            </select>
+        </div>
+        <div>
+            <!-- 7 - Attribute selected -->
+            <label for="contract">read the contect:</label>
+            <select name="contract" id="contract">
+                <option value="yes">yes</option>
+                <option value="not" selected>not</option>
+            </select>
+        </div>
+        <div>
+            <!-- 8 - Mutiple option -->
+            <label for="list">List shopping:</label>
+            <select name="list" id="list" multiple>
+                <option value="pera">pera</option>
+                <option value="feijao">Feijão</option>
+                <option value="arroz">Arraoz</option>
+                <option value="milho">milho</option>
+            </select>
+        </div>
+        <div>
+            <!-- 9 - element textarea -->
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Digite sua bio:"></textarea> 
+        </div>
+        <!-- 5 - submit form -->
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
     </form>
 </body>
 </html>

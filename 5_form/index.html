@@ -15,6 +15,7 @@
             <label for="text">Text</label>
             <input type="text" id="text"/>
         </div>
+
         <div>
             <!-- 3 - attribute name -->
             <label for="age">Ege:</label>
@@ -22,9 +23,10 @@
         </div>
         <div>
             <!-- 4 - attribute label -->
-            <label for="nome">name:</label>
-            <input type="text" name="nome" id="name">
+            <label for="name">name:</label>
+            <input type="text" name="surname">
         </div>
+
         <div>
             <!-- 6 - select -->
             <label for="job">Select your profession:</label>
@@ -35,6 +37,7 @@
                 <option value="OdevOps">OdevOps</option>
             </select>
         </div>
+
         <div>
             <!-- 7 - Attribute selected -->
             <label for="contract">read the contect:</label>
@@ -43,6 +46,7 @@
                 <option value="not" selected>not</option>
             </select>
         </div>
+
         <div>
             <!-- 8 - Mutiple option -->
             <label for="list">List shopping:</label>
@@ -53,13 +57,64 @@
                 <option value="milho">milho</option>
             </select>
         </div>
+
         <div>
             <!-- 9 - element textarea -->
             <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Digite sua bio:"></textarea> 
         </div>
+
+        <div>
+            <!-- 10 - elments fieldset and legend -->
+            <fieldset>
+                <legend>Pesonal regitration</legend>
+                <label for="name">name</label>
+                <input type="text" name="name" id="name">
+                <label for="surname">surname</label>
+                <input type="text" name="surname">
+            </fieldset>
+        </div>
+
+        <div>
+            <!-- 11 - datalist -->
+            <label for="flavor">Choose the flavor</label>
+            <input type="text" name="flavor" id="flavor" list="flavors">
+            <datalist id="flavors">
+                <option value="Cereja">teste</option>
+                <option value="Morango"></option>
+                <option value="Abacaxi"></option>
+                <option value="Choocolate"></option>
+            </datalist>
+        </div>
+        
+        <div>
+            <!-- 12 - input password -->
+            <label for="password">Type your password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        
+        <!-- 14 - radio button -->
+        <div>
+            <label for="car_model">Choose car model:</label>
+            <div class="radio">
+                <input type="radio" name="car_model" id="bmw" value="bmw">
+                <label for="bmw">BMW</label>
+            </div>
+            
+            <div class="radio">
+                <input type="radio" name="car_model" id="ferrari" value="ferrari">
+                <label for="ferrari">Ferrari</label>
+            </div>
+            
+            <div class="radio">
+                <input type="radio" name="car_model" id="renault" value="renault">
+                <label for="renault">Renault</label>
+            </div>
+        </div>
+
+        <!-- 13- reset -->
+        <input type="reset" value="limpar">
         <!-- 5 - submit form -->
         <input type="submit" value="enviar">
-        <input type="reset" value="limpar">
     </form>
 </body>
 </html>

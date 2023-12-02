@@ -9,26 +9,27 @@
 <body>
     <h2>Form HTML</h2>
     <form action="resgiter.php" method="get" autocomplete="off">
+        <!-- 1 - Primeiro formulário -->
+        <!-- 2 -Atributos do formulário -->
         <div>
-            <!-- 1 - Primeiro formulário -->
-            <!-- 2 -Atributos do formulário -->
             <label for="text">Text</label>
             <input type="text" id="text"/>
         </div>
 
+        <!-- 3 - attribute name -->
         <div>
-            <!-- 3 - attribute name -->
             <label for="age">Ege:</label>
             <input type="number" name="age" id="age">
         </div>
+
+        <!-- 4 - attribute label -->
         <div>
-            <!-- 4 - attribute label -->
             <label for="name">name:</label>
             <input type="text" name="surname">
         </div>
 
+        <!-- 6 - select -->
         <div>
-            <!-- 6 - select -->
             <label for="job">Select your profession:</label>
             <select name="job" id="job">
                 <option disabled selected>choise</option>
@@ -38,8 +39,8 @@
             </select>
         </div>
 
+        <!-- 7 - Attribute selected -->
         <div>
-            <!-- 7 - Attribute selected -->
             <label for="contract">read the contect:</label>
             <select name="contract" id="contract">
                 <option value="yes">yes</option>
@@ -47,8 +48,8 @@
             </select>
         </div>
 
+        <!-- 8 - Mutiple option -->
         <div>
-            <!-- 8 - Mutiple option -->
             <label for="list">List shopping:</label>
             <select name="list" id="list" multiple>
                 <option value="pera">pera</option>
@@ -58,13 +59,13 @@
             </select>
         </div>
 
+        <!-- 9 - element textarea -->
         <div>
-            <!-- 9 - element textarea -->
             <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Digite sua bio:"></textarea> 
         </div>
 
+        <!-- 10 - elments fieldset and legend -->
         <div>
-            <!-- 10 - elments fieldset and legend -->
             <fieldset>
                 <legend>Pesonal regitration</legend>
                 <label for="name">name</label>
@@ -74,8 +75,8 @@
             </fieldset>
         </div>
 
+        <!-- 11 - datalist -->
         <div>
-            <!-- 11 - datalist -->
             <label for="flavor">Choose the flavor</label>
             <input type="text" name="flavor" id="flavor" list="flavors">
             <datalist id="flavors">
@@ -86,8 +87,8 @@
             </datalist>
         </div>
         
+        <!-- 12 - input password -->
         <div>
-            <!-- 12 - input password -->
             <label for="password">Type your password:</label>
             <input type="password" name="password" id="password">
         </div>
@@ -96,7 +97,7 @@
         <div>
             <label for="car_model">Choose car model:</label>
             <div class="radio">
-                <input type="radio" name="car_model" id="bmw" value="bmw">
+                <input type="radio" name="car_model" id="bmw" value="bmw" checked>
                 <label for="bmw">BMW</label>
             </div>
             
@@ -111,6 +112,46 @@
             </div>
         </div>
 
+        <!-- 15 - checkbox -->
+        <div>
+            <label for="optionals">Car options:</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" id="optionals[]" value="big_tire">
+                <label for="optionals[]">Big tire</label>
+            </div>
+        </div>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" id="turbo_engine" value="turbo_engine">
+            <label for="turbo_engine">Turbo engine</label>
+        </div>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" id="hybrid" value="hybrid">
+            <label for="hybrid">hybrid</label>
+        </div>
+
+        <!-- 16 - date -->
+        <div>
+            <label for="birthday">Dete your birthday:</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+
+        <!-- 17 - file -->
+        <div>
+            <label for="image">Eserh your image:</label>
+            <input type="file" name="image" id="image">
+        </div>
+
+        <!-- 18 - number -->
+        <div>
+            <label for="num">Type a number:</label>
+            <input type="number" name="num" id="num" step="0.1">
+        </div>
+
+        <!-- emails -->
+        <div>
+            <label for="email">Type your e-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
         <!-- 13- reset -->
         <input type="reset" value="limpar">
         <!-- 5 - submit form -->

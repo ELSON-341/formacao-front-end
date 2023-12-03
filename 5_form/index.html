@@ -52,6 +52,7 @@
         <div>
             <label for="list">List shopping:</label>
             <select name="list" id="list" multiple>
+                <option disabled selected>list</option>
                 <option value="pera">pera</option>
                 <option value="feijao">Feijão</option>
                 <option value="arroz">Arraoz</option>
@@ -147,16 +148,34 @@
             <input type="number" name="num" id="num" step="0.1">
         </div>
 
-        <!-- emails -->
+        <!-- 19 - emails -->
         <div>
             <label for="email">Type your e-mail:</label>
             <input type="email" name="email" id="email">
         </div>
 
-        <!-- attribute value -->
+        <!-- 20 - attribute value -->
         <div>
             <label for="test">Type something:</label>
             <input type="text" name="test" id="test" value="Prenchido">
+        </div>
+        
+        <!-- 21 - attribute disabled -->
+        <div>
+            <label for="txt">Eunter a text:</label>
+            <input type="text" name="txt" id="txt" disabled value="Não digite">
+        </div>
+
+        <!-- 22 - attribute placeholder -->
+        <div>
+            <label for="tel">Telephene:</label>
+            <input type="number" name="tel" id="tel" placeholder="Enter your telephone">
+        </div>
+
+        <!-- 23 - required  -->
+        <div>
+            <label for="birthday">Enter your year of birht:</label>
+            <input type="date" name="birthday" id="birthday" required>
         </div>
         <!-- 13- reset -->
         <input type="reset" value="limpar">

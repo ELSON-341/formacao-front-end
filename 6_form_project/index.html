@@ -19,14 +19,53 @@
             <h2>Venda fácil seu carro!</h2>
             <p>Descreva as caracteristicas e marque os opcionais que ele possui</p>
         </section>
-        <div class="input_tada">
-            <label for="ad_title">Título do anúcio <span>*</span></label>
-            <input type="text" name="ad_title" id="ad_title" placeholder="Um título para anuciar seu carro">
-        </div>
-        <div class="input_tada">
-            <label for="price">preço<span>*</span></label>
-            <input type="number" name="price" id="price" placeholder="Defina o preço">
-        </div>
+        <form action="cadastro.php" autocomplete="on">
+            <section class="separetion">
+                <label for="ad_title">Título do anúcio <strong>*</strong></label>
+                <input type="text" name="ad_title" id="ad_title" placeholder="Um título para anuciar seu carro" required minlength="0" maxlength="5000">
+            </section>
+            <section class="separetion">
+                <label for="price">preço<strong>*</strong></label>
+                <input type="number" name="price" id="price" placeholder="Defina o preço" min="1" max="10" step="0.1">
+            </section>
+            <section class="separetion">
+                <label for="description">Descrição <strong>*</strong></label><br>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Descreva o seu veículo." required></textarea>
+            </section>
+            <section class="separetion">
+                <label for="brand">Marca <strong>*</strong></label>
+                <input type="text" name="brand" id="brand">
+            </section>
+            <section class="separetion">
+                <label for="model">Modelo <strong>*</strong></label>
+                <input type="text" name="model" id="model" required minlength="1" maxlength="40">
+            </section>
+            <section class="separetion">
+                <label for="km_driven">Kilometragem <strong>*</strong></label>
+                <input type="number" name="km_driven" id="km_driven" min="1" step="0.1">
+            </section>
+            <section class="separetion">
+                <label for="date_purchase">Data da compra <strong>*</strong></label>
+                <input type="date" name="date_purchase" id="date_purchase" required>
+            </section>
+            <section class="separetion">
+                <input type="radio" checked name="exchange" id="exchange_manual" value="exchange_manual">
+                <label for="exchange_manual">Manual</label>
+                <input type="radio" name="exchange" id="exchange_automatic" value="exchange_automatic">
+                <label for="exchange_automatic">Manual</label>
+                <section class="separetion">
+                    <label for="option">Opcionais:</label>
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                </section>
+            </section>
+        </form>
     </main>
 </body>
 </html>

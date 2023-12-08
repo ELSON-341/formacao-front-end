@@ -1,96 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style.css">
-    <title>vendas de carros</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vendas de carros</title>
 </head>
 <body>
-    <!-- cabeçalho -->
-    <header>
-        <h1>Casdastre seu para vender mais rápido!</h1>
-    </header>
-    <!-- campa pricipal -->
-    <main>
-        <section id="title">
-            <h1>Formulário</h1>
-        </section>
-        <section id="description_title">
-            <h2>Venda fácil seu carro!</h2>
-            <p>Descreva as caracteristicas e marque os opcionais que ele possui</p>
-        </section>
-        <form action="cadastro.php" autocomplete="on">
-            <section class="separetion">
-                <label for="ad_title">Título do anúcio: <strong>*</strong></label>
-                <input type="text" name="ad_title" id="ad_title" placeholder="Um título para anuciar seu carro" required minlength="0" maxlength="5000">
+    <main class="container">
+        <header>
+            <h3>Cadas seu veículo para vender vender mais rápido!</h3>
+        </header>
+        <main class="form-container">
+            <section class="form-header">
+                <p>Formulário</p>
             </section>
-            <section class="separetion">
-                <label for="price">preço: <strong>*</strong></label>
-                <input type="number" name="price" id="price" placeholder="Defina o preço" min="1" max="10" step="0.1">
-            </section>
-            <section class="separetion">
-                <label for="description">Descrição: <strong>*</strong></label><br>
-                <textarea name="description" id="description" cols="30" rows="10" placeholder="Descreva o seu veículo." required></textarea>
-            </section>
-            <section class="separetion">
-                <label for="brand">Marca: <strong>*</strong></label>
-                <input type="text" name="brand" id="brand" placeholder="Digite a marca do veículo">
-            </section>
-            <section class="separetion">
-                <label for="model">Modelo: <strong>*</strong></label>
-                <input type="text" name="model" id="model" required minlength="1" maxlength="40" placeholder="Digite o model do veículo">
-            </section>
-            <section class="separetion">
-                <label for="km_driven">Kilometragem: <strong>*</strong></label>
-                <input type="number" name="km_driven" id="km_driven" min="1" step="0.1" placeholder="Digite kilometragem do vveículo">
-            </section>
-            <section class="separetion">
-                <label for="date_purchase">Data da compra: <strong>*</strong></label>
-                <input type="date" name="date_purchase" id="date_purchase" required>
-            </section>
-            <section class="separetion"  id="especil">
-                <label for="exchange">Tipo de câmbio: <strong>*</strong></label>
-                <input type="radio" checked name="exchange" id="exchange_manual" value="exchange_manual">
-                <label for="exchange_manual">Manual</label>
-                <input type="radio" name="exchange" id="exchange_automatic" value="exchange_automatic">
-                <label for="exchange_automatic">Manual</label>
-            </section>
-                <section class="separetion" id="especil">
-                    <label for="option">Opcionais:</label>
-                    
-                    <input type="checkbox" name="option[]" id="airbag" value="airbag">
-                    <label for="airbag">Airbag</label>
-                    
-                    <input type="checkbox" name="option[]" id="alarm" value="Alarm">
-                    <label for="alarm">Alarme</label>
-                    
-                    <input type="checkbox" name="option[]" id="air_conditioning" value="air_conditioning">
-                    <label for="air_conditioning">Ar Condicionado</label>
-
-                    <input type="checkbox" name="option[]" id="reverse_camera" value="reverse_camera">
-                    <label for="reverse_camera">Câmera de Ré</label>
-
-                    <input type="checkbox" name="option[]" id="track_assistant" value="track_assistant">
-                    <label for="track_assistant">Assistente de Pista</label>
-
-                    <input type="checkbox" name="option[]" id="keyless_start" value="keyless_start">
-                    <label for="keyless_start">Partida Keyless</label>
-
-                    <input type="checkbox" name="option[]" id="cell_integration">
-                    <label for="cell_integration">Integração com Celular</label>
-                    
-                    <input type="checkbox" name="option[]" id="leather_seat" value="leather_seat">
-                    <label for="leather_seat">Banco de Acouro</label>
-                </section>
-                    <section class="separetion">
-                        <label for="photo">Foto do carro: <strong>*</strong></label>
-                        <input type="file" name="file" id="photo" value="photo">
+            <section class="form-body">
+                <h1 class="form-title">Veda fácil seu carro!</h1>
+                <p>
+                    Descreva as características e opcionais ele possui
+                </p>
+                <form action="" method="post">
+                    <section class="box-input">
+                        <label for="title">Título do anúncio <strong class="required-field">*</strong></label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Um título para anuciar seu carro" required minlength="1" maxlength="30">
                     </section>
-                    <section class="separetion">
-                        <input type="submit" value="Cadastrar">
-                    </section>
-        </form>
+                    <input type="submit" value="Eviar">
+                </form>
+            </section>
+        </main>
     </main>
 </body>
 </html>

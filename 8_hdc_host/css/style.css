@@ -178,9 +178,66 @@ div.plans li.price {
     font-size: 18px;
     position: relative;
 }
-.plans .plan-neme {
+
+div.plans li.plan-name {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
     color: #afff;
+    background-color: #202b34;
+    padding: 50px 0;
+}
+
+div.plans li.plan-btn {
+    background-color: #2cc762;
+    color: white;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+div.plans li.recommended {
+    background-color: #f45c57;
+}
+
+/* search domain */
+section.searchdomain-container {
+    background-color: #34454e;
+    text-align: center;
+    padding: 5rem 0;
+
+}
+
+section.searchdomain-container h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+section.searchdomain-container p {
+    color: #d5d5dd;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+section.searchdomain-container input {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+section.searchdomain-container input[type="text"] {
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-containe input[type="submit"] {
+    background-color: #2cc76a;
+    padding: 15px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }

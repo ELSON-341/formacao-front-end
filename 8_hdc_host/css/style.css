@@ -231,13 +231,20 @@ section.searchdomain-container input[type="text"] {
     width: 60%;
     padding: 20px;
     font-size: 20px;
+    outline: none;
+    cursor: text;
     margin-bottom: 25px;
 }
 
-.searchdomain-containe input[type="submit"] {
+input[type="submit"] {
     background-color: #2cc76a;
     padding: 15px;
     color: white;
     font-size: 24px;
     cursor: pointer;
+    opacity: 0.8;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
 }

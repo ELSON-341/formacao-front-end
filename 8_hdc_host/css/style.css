@@ -274,7 +274,7 @@ section.contact-container textarea {
     margin: 0 10px 20px;
 }
 
-section.contact-container textPath {
+section.contact-container textarea {
     display: block;
     margin: 0 auto 20px;
     width: 470px;
@@ -287,4 +287,54 @@ section.contact-container input[type="submit"] {
     background-color: #2cc76a;
     color: white;
     cursor: pointer;
+}
+
+/* small laptops a partir de 1100px */
+@media screen and (max-width: 1100px) {
+    div.plans-container {
+        width: 95%;
+
+    }
+
+    div.plans {
+        margin: 0 5px;
+    }
+    
+}
+
+/* tablet 900px */
+@media screen and (max-width: 900px) {
+    div.main-banner p {
+        padding: 0 6rem;
+    }
+
+    section.searchdomain-container {
+        padding: 2rem 4rem;
+    }
+}
+
+/* celular 576px */
+@media screen and (max-width: 576px){
+    html, body {
+        overflow-x: hidden;
+    }
+    div.plans-container {
+        flex-direction: column;
+
+    }
+
+    div.plans {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section.contact-container {
+        padding: 3rem 2rem;
+    }
+
+    section.contact-container input, 
+    section.contact-container textarea {
+        width: 100%;
+        margin: 10px 0;
+    }
 }

@@ -289,6 +289,11 @@ section.contact-container input[type="submit"] {
     cursor: pointer;
 }
 
+footer {
+    text-align: center;
+    padding: 3rem;
+}
+
 /* small laptops a partir de 1100px */
 @media screen and (max-width: 1100px) {
     div.plans-container {
@@ -318,14 +323,41 @@ section.contact-container input[type="submit"] {
     html, body {
         overflow-x: hidden;
     }
+
+    div.navbar-container {
+        padding: 0 10px;
+    }
+
+    div.main-banner p {
+        padding: 0 2rem;
+    }
+
+    .navbar-items li{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    section.services-container ul {
+        flex-direction: column;
+    }
+
     div.plans-container {
         flex-direction: column;
-
     }
 
     div.plans {
         width: 100%;
         max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    section.searchdomain-container h2 {
+        font-size: 28px;
+    }
+
+    section.searchdomain-container input[type="text"] {
+        width: 100%;
+        text-align: center;
     }
 
     section.contact-container {

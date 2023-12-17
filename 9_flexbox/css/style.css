@@ -35,14 +35,69 @@ div.box {
 }
 
 /* justify content */
-div.center {
+div.center,
+div.space-around,
+div.space-between,
+div.end,
+div.space-evenly {
     display: flex;
     margin-bottom: 20px;
 }
-div.center div.box {
+div.center div.box,
+div.space-around div.box,
+div.space-between div.box,
+div.end div.box,
+div.space-evenly div.box,
+div.center div.box,
+div.align-center div.box,
+div.flex-end div.box,
+div.stretch div.box {
     width: 50px;
 }
 
 div.center {
     justify-content: center;
+}
+
+div.space-around {
+    justify-content: space-around;
+}
+
+div.space-evenly {
+    justify-content: space-evenly;
+}
+
+div.space-between {
+    justify-content: space-between;
+}
+
+div.end {
+    justify-content: end;
+}
+
+/* align items */
+div.center,
+div.align-center,
+div.flex-end,
+div.stretch {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+div.align-center {
+    justify-content: center;
+    align-items: center;
+}
+div.flex-end {
+    align-items: flex-end;
+}
+
+div.stretch {
+    align-items: stretch;
+}
+
+div.stretch div.box {
+    height: auto;
 }

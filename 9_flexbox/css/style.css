@@ -31,7 +31,6 @@ div.box {
     height: 40px;
     width: 33%;
     border: 1px solid red;
-    margin-bottom: 20px;
 }
 
 /* justify content */
@@ -98,6 +97,54 @@ div.stretch {
     align-items: stretch;
 }
 
-div.stretch div.box {
+/* div.stretch > div.box {
     height: auto;
+} */
+
+/* gap */
+div.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid ;
+}
+
+div.gap {
+    gap: 50px;
+}
+
+/* oreder */
+
+div.order {
+    display: flex;
+}
+
+div.order > div {
+    text-align: center;
+    padding: 10px;
+}
+
+div#thee {
+    order: 3;
+}
+
+div#two {
+    order: 2;
+}
+
+div#one {
+    order: 1;
+}
+
+/* flex grow */
+div.grow {
+    display: flex;
+}
+
+div.grow div.box {
+    flex: 1;
+}
+
+div.grow div.big {
+    flex-grow: 3;
 }

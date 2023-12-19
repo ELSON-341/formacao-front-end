@@ -148,3 +148,45 @@ div.grow div.box {
 div.grow div.big {
     flex-grow: 3;
 }
+
+/* basis */
+
+div.basis {
+    display: flex;
+}
+
+div.basis div.box {
+    flex-basis: 70px;
+}
+div.basis div.big {
+    flex-grow: 1;
+}
+
+/* shrink */
+div.shrink {
+    display: flex;
+}
+
+div.shrink div.box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+div.shrink div.small {
+    flex-shrink: 2;
+}
+
+/* flex shorthand */
+div.shorthand {
+    display: flex;
+}
+
+div.shorthand div.box {
+    width: auto;
+    flex: 1 1 50px;
+}
+div.shorthand div.different {
+    flex: 2 1 100px;
+}

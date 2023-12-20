@@ -190,3 +190,13 @@ div.shorthand div.box {
 div.shorthand div.different {
     flex: 2 1 100px;
 }
+div.auto-alignment {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid purple;
+}
+div.auto-alignment div.different {
+    text-justify: justi;
+    align-self: center;
+}

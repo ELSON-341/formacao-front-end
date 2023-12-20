@@ -197,6 +197,5 @@ div.auto-alignment {
     border: 1px solid purple;
 }
 div.auto-alignment div.different {
-    text-justify: justi;
     align-self: center;
 }

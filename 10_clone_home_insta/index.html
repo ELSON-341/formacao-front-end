@@ -10,25 +10,25 @@
 <body>
     <main>
         <!-- banner container -->
-        <section id="banner-container">
+        <section id="banner">
             <figure>
                 <img src="img/banner2.png" alt="Crie uma conta no Instragram">
             </figure>
         </section>
         <!-- login e registro -->
         <section id="login">
-            <figure>
-                <img src="img/logo_instagram.png" alt="Logo do Instagram">
-            </figure>
-            <div id="card-box">
+            <div id="card">
+                <figure>
+                    <img src="img/logo_instagram.png" alt="Logo do Instagram" id="logo">
+                </figure>
                 <form>
-                    <input type="text" name="username" id="username" required placeholder="Número de telefone, usuário ou e-mail">
+                    <input type="text" name="username" id="username" required placeholder="Número de telefone, usuário ou e-mail" minlength="1" maxlength="100">
                     
-                    <input type="password" name="password" id="password" min="8" max="30" required placeholder="Senha">
+                    <input type="password" name="password" id="password" minlength="8" maxlength="70" required placeholder="Senha">
                     
                     <input type="submit" value="Entrar">
                 </form>
-                <div id="separator">
+                <div id="separator"> 
                     <div id="line"></div>
                     <span>ou</span>
                 </div>
@@ -39,7 +39,34 @@
             <div id="register-container">
                 <p>Não tem um conta? <a href="#">Casdastre-se</a></p>
             </div>
+            <div id="get-app">
+                <p>Obtenha o aplicativo</p>
+                <a href="#" rel="external" hreflang="pt-br">
+                    <img src="img/apple_btn.png" alt="App Store">
+                </a>
+                <a href="#" rel="external" hreflang="pt-br">
+                    <img src="img/gplay_btn.png" alt="Google Play">
+                </a>
+            </div>
         </section>
     </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Meta</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Sobre</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Blog</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Ajuda</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>API</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Privacidade</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Termos</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Privacidade da Contas</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Hashtags</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Localização</li>
+                <li><a href="#" hreflang="pt-br" rel="external"></a>Instagram Lite</li>
+            </ul>
+        </nav>
+        <p>&copy; 2022 Instagram from Meta</p>
+    </footer>
 </body>
 </html>

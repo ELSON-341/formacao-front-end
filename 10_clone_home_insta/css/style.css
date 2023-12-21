@@ -1,1 +1,97 @@
 @charset "UTF-8 ";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    padding-top: 30px;
+}
+ 
+main {
+    display: flex;
+}
+
+section#banner,
+section#login {
+    flex: 1 1 0;
+    width: 50%;
+}
+
+/* BANNER */
+section#banner {
+    text-align: right;
+}
+
+section#banner  img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+section#login {
+    text-align: center;
+}
+
+/* LOGIN FORM */
+div#card {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 30px;
+}
+
+div#card figure img#logo {
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+div#card input {
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 268px;
+    margin: 5px auto;
+}
+
+div#card input[type="submit"] {
+    background-color: #b2dffc;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+div#card input[type="submit"]:hover {
+    background-color: #6bbff7;
+}
+
+/* SEPARATOR */
+
+div#separator {
+    position: relative;
+}
+
+div#line {
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+div#separator span {
+    text-transform: uppercase;
+    width: 50px;
+    margin-left: -25px;
+    background-color: white;
+    color: #bbb;
+    position: absolute;
+    top: -6px;
+}

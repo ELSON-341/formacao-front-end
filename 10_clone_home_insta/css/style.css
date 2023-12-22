@@ -96,3 +96,115 @@ div#separator span {
     position: absolute;
     top: -6px;
 }
+
+/* FACEBOOK LOGIN */
+
+div#facebook-login {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+div#facebook-login a {
+    text-align: center;
+    text-decoration: none;
+    color: #385185;
+}
+div#facebook-login img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+div#facebook-login span {
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+/* FORGOT PASSWORD */
+
+
+div#forgot-pass {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+div#forgot-pass a {
+    text-decoration: none;
+    color: #373799;
+    font-size: 12px;
+    text-align: center;   
+}
+
+/* RESGISTER */
+
+div#register-container {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    padding: 25px;
+    width: 350px;
+    margin-top: 10px;
+
+}
+
+div#register-container p {
+    font-size: 14px;
+    color: #262626;
+}
+
+div#register-container a {
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* GRT APP */
+div#get-app {
+    text-align: center;
+    width: 350px;
+}
+
+div#get-app p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+div#register-container a {
+    text-decoration: none;
+}
+
+div#get-app img{
+    width: 136px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    flex-direction: column;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+} 
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul a,
+footer p {
+    text-decoration: none;
+    text-align: center;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+footer p {
+    margin-top: 10px;
+}

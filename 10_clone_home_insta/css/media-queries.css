@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* cell phone */
+@media screen and (max-width: 450px) {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    section#banner {
+        display: none;
+    }
+
+    section#login,
+    div#card,
+    div#register-container,
+    div#get-app {
+        margin-top: 0;
+        border: none;
+        width: 100%;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer {
+        width: 90%;
+    }
+}

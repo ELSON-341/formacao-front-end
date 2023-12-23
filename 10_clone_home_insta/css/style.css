@@ -70,6 +70,7 @@ div#card input[type="submit"] {
     color: white;
     font-weight: bolder;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 div#card input[type="submit"]:hover {

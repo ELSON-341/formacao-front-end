@@ -8,6 +8,7 @@
     text-decoration: none;
     outline: none;
 }
+
 body {
     background-color: #fafafa;
 }
@@ -17,16 +18,16 @@ header {
     align-items: center;
     margin-bottom: 30px;
     border-bottom: 1px solid #bdbdbd;
-    padding: 10px 40px;
+    padding: 40px 50px;
 }
 
 header strong#logo {
     font-size: 1.8em;
     font-weight: bold;
 }
-header li {
-    display: inline-block;
-    margin-left: 10px;
+header ul {
+    display: flex;
+    gap: 1rem;
 }
 
 header a {
@@ -39,11 +40,14 @@ header a:hover {
 
 div#container {
     display: flex;
-    justify-content: space-around;
+    max-width: 1200px;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
 }
 
 main {
-    max-width: 800px;
+    flex: 3 1 0;
 }
 
 article {
@@ -84,6 +88,69 @@ article a:hover {
     text-decoration: underline;
 }
 
+aside section#find,
+aside section#categories,
+aside section#tags {
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+aside {
+    flex: 1 1 0;
+}
+aside form {
+    display: flex;
+}
+aside section#find input {
+    font-size: 15px;
+    padding: 5px 9px;
+}
+
+aside section#find input[type="submit"] {
+    background-color: #37a1f7;
+    border: none;
+    border-radius: 0px 5.5px 5.5px 0px;
+    padding: 7px;
+    font-weight: bold;
+    color: white;
+}
+
+aside section#categories li {
+    margin-bottom: 1rem;
+}
+
+aside section#categories a {
+    color: black;
+    transition: .5s;
+}
+
+aside section#categories a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+aside section#tags menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+aside section#tags a {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+
 footer {
     display: flex;
     justify-content: center;
@@ -100,34 +167,4 @@ footer h1 {
 
 footer p {
     margin: 7px 0px ;
-}
-aside section#find,
-aside section#categories,
-aside section#tags {
-    border: 1px solid rgba(128, 128, 128, 0.61);
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 15px;
-}
-
-aside section#find h3 {
-    font-size: 1.7em;
-    margin-bottom: 20px;
-}
-
-aside section#find input {
-    font-size: 15px;
-    padding: 5px 9px;
-}
-
-aside section#find input[type="submit"] {
-    background-color: #37a1f7;
-    border: none;
-    padding: 7px;
-    font-weight: bold;
-    color: white;
-}
-
-aside section#categories a {
-
 }

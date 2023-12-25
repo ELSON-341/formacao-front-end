@@ -168,3 +168,13 @@ footer h1 {
 footer p {
     margin: 7px 0px ;
 }
+
+@media screen and (max-width: 450px){
+    header {
+        padding: 30px 30px;
+    }
+    div#container {
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+}

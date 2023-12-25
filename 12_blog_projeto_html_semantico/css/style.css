@@ -6,6 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    outline: none;
 }
 body {
     background-color: #fafafa;
@@ -36,3 +37,97 @@ header a:hover {
     color: #bdbdbd;
 }
 
+div#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    max-width: 800px;
+}
+
+article {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+article img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+article h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+article p {
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 22px;
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+article strong {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+article a {
+    color: black;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 170px;
+    border-top: 1px solid #887878;
+    text-align: center;
+}
+footer h1 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+footer p {
+    margin: 7px 0px ;
+}
+aside section#find,
+aside section#categories,
+aside section#tags {
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+aside section#find h3 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+aside section#find input {
+    font-size: 15px;
+    padding: 5px 9px;
+}
+
+aside section#find input[type="submit"] {
+    background-color: #37a1f7;
+    border: none;
+    padding: 7px;
+    font-weight: bold;
+    color: white;
+}
+
+aside section#categories a {
+
+}

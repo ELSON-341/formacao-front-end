@@ -339,6 +339,7 @@ footer {
 
     section.services-container ul {
         flex-direction: column;
+        align-items: center;
     }
 
     div.plans-container {
